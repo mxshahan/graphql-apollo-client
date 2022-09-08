@@ -27,7 +27,7 @@ const client = configureClient({
 ```
 
 The above code is to configure client. Now it's time to use this client
-Note: To define query you need to install graphql-tag to use `gql`
+Note: To define query you need import `gql` from `graphql-apollo-client`
 
 ```js
 import { gql } from 'graphql-apollo-client';
