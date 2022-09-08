@@ -4,7 +4,7 @@ Helpful utility that will make your development process faster.
 - This can be used in any library
 
 ### Install Package
-- `npm install graphql-apollo-client --save` or `yarn add graphql-apollo-client`
+`npm install graphql-apollo-client --save` or `yarn add graphql-apollo-client`
 
 
 ### Example
