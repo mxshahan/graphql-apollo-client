@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon example.js"
   },
   "keywords": [],
   "description": ""
