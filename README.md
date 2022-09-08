@@ -14,13 +14,14 @@ yarn add graphql-apollo-client
 
 ### Example
 
+
 ```js
-import configureClient from 'graphql-apollo-client';
+import { configureClient } from 'graphql-apollo-client';
 
 const client = configureClient({
-  httpEndpoint, 
-  wsEndpoint, 
-  bearerToken
+  httpEndpoint: '<HTTP_GRAPHQL_URL>', 
+  wsEndpoint: '<WS_GRAPHQL_URL>', 
+  bearerToken: 'Bearer <TOKEN>'
 })
 `
 ```
@@ -29,32 +30,37 @@ The above code is to configure client. Now it's time to use this client
 Note: To define query you need to install graphql-tag to use `gql`
 
 ```js
-import { gql } from 'graphql-tag';
+import { gql } from 'graphql-apollo-client';
+
+
+const query = gql`
+  query Books {
+    books {
+      title
+      author
+    }
+  }
+`
+
+const subscription = gql`
+  subscription {
+    realtimeMeasurement(deviceId: "pM8SEyRQ") {
+      activePowerImport
+      time
+    }
+  }
+`
 
 client
   .query({
-    query: gql`
-      query Books {
-        books {
-          title
-          author
-        }
-      }
-    `,
+    query: query,
     variables: {},
   })
   .then(console.log)
 
 client
  .subscribe({
-   query: gql`
-     subscription {
-       realtimeMeasurement(deviceId: "pM8SEyRQ") {
-         activePowerImport
-         time
-       }
-     }
-   `,
+   query: subscription,
    variables: {}
  })
  .subscribe({
