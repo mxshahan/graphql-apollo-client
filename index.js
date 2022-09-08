@@ -97,4 +97,4 @@ const configureClient = ({ httpEndpoint, wsEndpoint, bearerToken }) => {
 
 
 
-module.exports = configureClient
+module.exports = { configureClient, gql }
