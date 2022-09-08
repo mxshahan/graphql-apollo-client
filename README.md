@@ -1,7 +1,7 @@
 # graphql-apollo-client
 
 Helpful utility that will make your development process faster. 
-- This can be used in any library
+- This can be used in any library. Basically nodejs based.
 
 ### Install Package
 `npm install graphql-apollo-client --save` or `yarn add graphql-apollo-client`
