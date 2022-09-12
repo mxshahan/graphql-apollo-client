@@ -24,6 +24,6 @@
     "start": "node index.js",
     "dev": "nodemon example.js"
   },
-  "keywords": [],
+  "keywords": [" nodejs", "graphql", " javascript"],
   "description": ""
 }
