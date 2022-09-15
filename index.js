@@ -6,8 +6,8 @@ const WebSocket = require("ws");
 const ApolloLink = require("apollo-link");
 const { createHttpLink } = require("apollo-link-http");
 const { getMainDefinition } = require("apollo-utilities");
-const fetch = (...args) =>
-  import("node-fetch").then(({ default: fetch }) => fetch(...args));
+// const fetch = (...args) =>
+//   import("node-fetch").then(({ default: fetch }) => fetch(...args));
 
 /**
  * 
@@ -31,7 +31,7 @@ const configureClient = ({ httpEndpoint, wsEndpoint, bearerToken }) => {
 
   const httpLink = createHttpLink({
     uri: httpEndpoint,
-    fetch: fetch,
+    // fetch: fetch,
     headers: {
       Authorization: bearerToken
     }

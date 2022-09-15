@@ -1,16 +1,14 @@
-const { configureClient, gql } = require('./index');
+const { configureClient, gql } = require('graphql-apollo-client');
 
-const GRAPHQL_ENDPOINT = "https://api.ecomon.no";
-const GRAPHQL_ENDPOINT_WS = "wss://api.ecomon.no";
-const TOKEN = "Bearer intermediary-api-key_858bef2f-5b67-49b2-b7e0-c07a093f98be";
+const GRAPHQL_ENDPOINT = 'https://api.ecomon.no';
+const GRAPHQL_ENDPOINT_WS = 'wss://api.ecomon.no';
+const TOKEN = 'Bearer intermediary-api-key_858bef2f-5b67-49b2-b7e0-c07a093f98be';
 
 const client = configureClient({
   httpEndpoint: GRAPHQL_ENDPOINT,
   wsEndpoint: GRAPHQL_ENDPOINT_WS,
-  bearerToken: TOKEN
-})
-
-
+  bearerToken: TOKEN,
+});
 
 // Test subscription
 client
@@ -23,11 +21,13 @@ client
         }
       }
     `,
-    variables: {}
+    variables: {},
   })
   .subscribe({
     next(data) {
       console.log(data);
+    },
+    error(err) {
+      console.log(err)
     }
-  });
-
+  })
