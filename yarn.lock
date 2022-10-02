@@ -3,9 +3,9 @@
 
 
 "@types/node@>=6":
-  version "18.7.16"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.16.tgz#0eb3cce1e37c79619943d2fd903919fc30850601"
-  integrity sha512-EQHhixfu+mkqHMZl1R2Ovuvn47PUw18azMJOTwSZr9/fhzHNGXAJ0ma0dayRVchprpCj0Kc1K1xKoWaATWF1qg==
+  version "18.7.23"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.23.tgz#75c580983846181ebe5f4abc40fe9dfb2d65665f"
+  integrity sha512-DWNcCHolDq0ZKGizjx2DZjR/PqsYwAcYUJmfMWqtVU2MBMG5Mo+xFZrhGId5r/O5HOuMPyQEcM6KUBp5lBZZBg==
 
 "@types/zen-observable@^0.8.0":
   version "0.8.3"
@@ -233,26 +233,6 @@ glob-parent@~5.1.2:
   integrity sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==
   dependencies:
     is-glob "^4.0.1"
-
-graphql-apollo-client@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/graphql-apollo-client/-/graphql-apollo-client-1.0.3.tgz#292a6708db9f76602d7c4f3a8bcd7056af4368b9"
-  integrity sha512-orlp1w985gilLu1HJP2RdPsNWMe1UuxfcZC2A29yFViUjE8wZu+Cvz3YaVSSLEubwLbK7bmARJyRBiGRb7LtZQ==
-  dependencies:
-    apollo-cache-inmemory "1.6.6"
-    apollo-client "2.6.10"
-    apollo-link "1.2.14"
-    apollo-link-error "1.1.13"
-    apollo-link-http "1.5.17"
-    apollo-link-ws "1.0.20"
-    apollo-utilities "1.3.4"
-    graphql "16.6.0"
-    graphql-tag "2.12.6"
-    graphql-ws "5.10.1"
-    node-fetch "3.2.10"
-    nodemon "2.0.19"
-    subscriptions-transport-ws "0.11.0"
-    ws "8.8.1"
 
 graphql-tag@2.12.6:
   version "2.12.6"

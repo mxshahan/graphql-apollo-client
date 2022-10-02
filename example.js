@@ -1,4 +1,4 @@
-const { configureClient, gql } = require('graphql-apollo-client');
+const { configureClient, gql } = require('./index');
 
 const GRAPHQL_ENDPOINT = 'https://api.ecomon.no';
 const GRAPHQL_ENDPOINT_WS = 'wss://api.ecomon.no';
@@ -28,6 +28,6 @@ client
       console.log(data);
     },
     error(err) {
-      console.log(err)
-    }
-  })
+      console.log(err);
+    },
+  });

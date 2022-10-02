@@ -22,7 +22,8 @@
   },
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon example.js"
+    "dev": "nodemon example.js",
+    "example": "nodemon graphql-ws.js"
   },
   "keywords": [
     " nodejs",
